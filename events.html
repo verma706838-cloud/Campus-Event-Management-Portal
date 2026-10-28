@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>CampusConnect | Events</title>
+  <meta content="CampusConnect campus event management and registration portal." name="description" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a aria-label="CampusConnect home" class="brand" href="index.html">
+        <span aria-hidden="true" class="brand-mark">C</span>
+        <span class="brand-text">Campus<strong>Connect</strong></span>
+      </a>
+
+      <nav aria-label="Primary" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="confirmation.html">Confirmation</a></li>
+          <li><a href="dashboard.html">Organizers</a></li>
+          <li><a href="add event.html">Add Event</a></li>
+        </ul>
+      </nav>
+
+      <!-- Placeholder: a real login page would need a backend -->
+      <a class="btn btn-accent header-cta" href="login.html">Student Login</a>
+    </div>
+  </header>
+
+  
+
+  <main id="main">
+    <section aria-labelledby="events-title" class="section" id="events">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-dark">Upcoming events</p>
+          <h2 id="events-title">What's happening on campus</h2>
+          <p class="section-lead">Search by name or pick a category. Seat bars show how full each event is.</p>
+        </div>
+
+        <!-- Visual-only search and filters (no JavaScript, so they don't filter) -->
+        <div class="toolbar">
+          <form action="#events" class="search" method="get" role="search">
+            <label class="sr-only" for="event-search">Search events</label>
+            <span aria-hidden="true" class="search-icon">🔍</span>
+            <input id="event-search" name="q" placeholder="Search events, venues or topics&hellip;" type="search" />
+            <button class="btn btn-primary" type="button">Search</button>
+          </form>
+
+          <ul aria-label="Filter events by category" class="chips">
+            <li><button aria-pressed="true" class="chip" type="button">All</button></li>
+            <li><button aria-pressed="false" class="chip chip-cultural" type="button">Cultural</button></li>
+            <li><button aria-pressed="false" class="chip chip-workshop" type="button">Workshops</button></li>
+            <li><button aria-pressed="false" class="chip chip-seminar" type="button">Seminars</button></li>
+            <li><button aria-pressed="false" class="chip chip-competition" type="button">Competitions</button></li>
+          </ul>
+        </div>
+
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <article aria-labelledby="ev-code" class="event-card cat-competition">
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Competition</span>
+                <span class="seat-chip low">6 seats left</span>
+              </div>
+              <h3 id="ev-code">CodeSprint 24-Hour Hackathon</h3>
+              <ul class="meta">
+                <li>
+                  <span aria-hidden="true">📅</span>
+                  <span><span class="sr-only">Date: </span>Sat&ndash;Sun, Nov 14&ndash;15, 2026</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">🕒</span>
+                  <span><span class="sr-only">Time: </span>Starts 10:00 AM Saturday</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span><span class="sr-only">Venue: </span>Innovation Hub, Block C</span>
+                </li>
+              </ul>
+              <p class="desc">Teams build a working prototype that tackles a campus problem. Mentors, meals and prizes included.</p>
+              <p class="audience"><strong>Open to:</strong> Teams of 3&ndash;4, any branch</p>
+              <div class="capacity">
+                <div aria-label="95 percent full" class="meter fill-95 is-low" role="img"><span></span></div>
+                <p>114 of 120 seats booked</p>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-outline" href="featured.html">View Details</a>
+              <a class="btn btn-primary" href="register.html">Register</a>
+            </div>
+          </article>
+
+
+          <!-- Card 2-->
+          <article aria-labelledby="ev-tarang" class="event-card cat-cultural">
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Cultural Fest</span>
+                <span class="seat-chip ok">342 seats left</span>
+              </div>
+              <h3 id="ev-tarang">Tarang 2026: Annual College Fest</h3>
+              <ul class="meta">
+                <li>
+                  <span aria-hidden="true">📅</span>
+                  <span><span class="sr-only">Date: </span>Fri&ndash;Sun, Nov 20&ndash;22, 2026</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">🕒</span>
+                  <span><span class="sr-only">Time: </span>10:00 AM onwards</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span><span class="sr-only">Venue: </span>Main Quadrangle &amp; Open Air Theatre</span>
+                </li>
+              </ul>
+              <p class="desc">Three days of live music, dance, stand-up, food stalls and art installations created by student clubs.</p>
+              <p class="audience"><strong>Open to:</strong> All enrolled students (2 guest passes each)</p>
+              <div class="capacity">
+                <div aria-label="72 percent full" class="meter fill-72" role="img"><span></span></div>
+                <p>858 of 1,200 seats booked</p>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-outline" href="featured.html">View Details</a>
+              <a class="btn btn-primary" href="register.html">Register</a>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article aria-labelledby="ev-ml" class="event-card cat-workshop">
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Workshop</span>
+                <span class="seat-chip low">14 seats left</span>
+              </div>
+              <h3 id="ev-ml">Intro to Machine Learning with Python</h3>
+              <ul class="meta">
+                <li>
+                  <span aria-hidden="true">📅</span>
+                  <span><span class="sr-only">Date: </span>Sat, Nov 7, 2026</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">🕒</span>
+                  <span><span class="sr-only">Time: </span>10:00 AM &ndash; 4:00 PM</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span><span class="sr-only">Venue: </span>Computer Science Lab 3, Block B</span>
+                </li>
+              </ul>
+              <p class="desc">Build and evaluate your first classification model in a guided, hands-on session. Bring a laptop.</p>
+              <p class="audience"><strong>Open to:</strong> 2nd&ndash;4th year CS, IT &amp; ECE students</p>
+              <div class="capacity">
+                <div aria-label="77 percent full" class="meter fill-77 is-low" role="img"><span></span></div>
+                <p>46 of 60 seats booked</p>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-outline" href="featured.html">View Details</a>
+              <a class="btn btn-primary" href="register.html">Register</a>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article aria-labelledby="ev-energy" class="event-card cat-seminar">
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Seminar</span>
+                <span class="seat-chip ok">180 seats left</span>
+              </div>
+              <h3 id="ev-energy">Careers in Sustainable Energy</h3>
+              <ul class="meta">
+                <li>
+                  <span aria-hidden="true">📅</span>
+                  <span><span class="sr-only">Date: </span>Thu, Nov 12, 2026</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">🕒</span>
+                  <span><span class="sr-only">Time: </span>3:00 PM &ndash; 5:00 PM</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span><span class="sr-only">Venue: </span>Main Auditorium</span>
+                </li>
+              </ul>
+              <p class="desc">Industry speakers share career paths in solar, wind and grid technology, followed by a Q&amp;A panel.</p>
+              <p class="audience"><strong>Open to:</strong> All students and faculty</p>
+              <div class="capacity">
+                <div aria-label="40 percent full" class="meter fill-40" role="img"><span></span></div>
+                <p>120 of 300 seats booked</p>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-outline" href="featured.html">View Details</a>
+              <a class="btn btn-primary" href="register.html">Register</a>
+            </div>
+          </article>
+
+          
+
+          <!-- Card 5 -->
+          <article aria-labelledby="ev-debate" class="event-card cat-competition">
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Competition</span>
+                <span class="seat-chip ok">35 seats left</span>
+              </div>
+              <h3 id="ev-debate">Inter-College Debate Championship</h3>
+              <ul class="meta">
+                <li>
+                  <span aria-hidden="true">📅</span>
+                  <span><span class="sr-only">Date: </span>Thu, Nov 19, 2026</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">🕒</span>
+                  <span><span class="sr-only">Time: </span>9:30 AM &ndash; 4:30 PM</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span><span class="sr-only">Venue: </span>Seminar Hall B</span>
+                </li>
+              </ul>
+              <p class="desc">Parliamentary-style rounds on current affairs, judged by faculty and alumni. Certificates for all speakers.</p>
+              <p class="audience"><strong>Open to:</strong> Undergraduate students, individual entry</p>
+              <div class="capacity">
+                <div aria-label="56 percent full" class="meter fill-56" role="img"><span></span></div>
+                <p>45 of 80 seats booked</p>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-outline" href="featured.html">View Details</a>
+              <a class="btn btn-primary" href="register.html">Register</a>
+            </div>
+          </article>
+
+          <!-- Card 6: full event -->
+          <article aria-labelledby="ev-photo" class="event-card cat-workshop">
+            <div class="card-body">
+              <div class="card-tags">
+                <span class="badge">Workshop</span>
+                <span class="seat-chip full">Full &middot; waitlist</span>
+              </div>
+              <h3 id="ev-photo">Photography Walk &amp; Editing Masterclass</h3>
+              <ul class="meta">
+                <li>
+                  <span aria-hidden="true">📅</span>
+                  <span><span class="sr-only">Date: </span>Sat, Nov 21, 2026</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">🕒</span>
+                  <span><span class="sr-only">Time: </span>7:30 AM &ndash; 12:00 PM</span>
+                </li>
+                <li>
+                  <span aria-hidden="true">📍</span>
+                  <span><span class="sr-only">Venue: </span>Botanical Garden &amp; Media Lab</span>
+                </li>
+              </ul>
+              <p class="desc">Shoot golden-hour photos around campus, then learn colour grading and retouching with a professional.</p>
+              <p class="audience"><strong>Open to:</strong> All students, any experience level</p>
+              <div class="capacity">
+                <div aria-label="100 percent full" class="meter fill-100 is-full" role="img"><span></span></div>
+                <p>40 of 40 seats booked</p>
+              </div>
+            </div>
+            <div class="card-actions">
+              <a class="btn btn-outline" href="featured.html">View Details</a>
+              <a class="btn btn-outline" href="register.html">Join Waitlist</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a aria-label="CampusConnect home" class="brand brand-light" href="index.html">
+          <span aria-hidden="true" class="brand-mark">C</span>
+          <span class="brand-text">Campus<strong>Connect</strong></span>
+        </a>
+        <p class="footer-about">The one place to discover, register for and manage campus events.</p>
+      </div>
+
+      <nav aria-labelledby="footer-links-title">
+        <h2 id="footer-links-title">Useful links</h2>
+        <ul>
+          <li><a href="events.html">Upcoming events</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="confirmation.html">Sample confirmation slip</a></li>
+          <li><a href="dashboard.html">Organizer dashboard</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">Contact</h2>
+        <address>
+          Student Activities Office<br />
+          Room 204, Student Union Building<br />
+          Horizon State University Campus<br />
+          <a href="mailto:events@campusconnect.example.edu">events@campusconnect.example.edu</a><br />
+          Phone: +91 00000 00000<br />
+          Mon&ndash;Fri, 9:00 AM &ndash; 5:00 PM
+        </address>
+      </section>
+    </div>
+
+    <div class="container footer-bottom" style="text-align: center; padding: 20px 0; font-family: sans-serif;">
+      <p style="margin-bottom: 10px; color: #666;">Project by:</p>
+      <div style="display: flex; justify-content: center; gap: 15px; font-weight: bold;">
+        <a href="#" style="color: #007bff; text-decoration: none;">Harshit Verma</a>
+        <span style="color: #ccc;">|</span>
+        <a href="#" style="color: #007bff; text-decoration: none;">Prerna Singh</a>
+        <span style="color: #ccc;">|</span>
+        <a href="#" style="color: #007bff; text-decoration: none;">Saniya Ansari</a>
+      </div>
+
+   
+  </footer>
+</body>
+
+</html>

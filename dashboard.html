@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>CampusConnect | Organizer Dashboard</title>
+  <meta content="CampusConnect campus event management and registration portal." name="description" />
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body id="top">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a aria-label="CampusConnect home" class="brand" href="index.html">
+        <span aria-hidden="true" class="brand-mark">C</span>
+        <span class="brand-text">Campus<strong>Connect</strong></span>
+      </a>
+
+      <nav aria-label="Primary" class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="featured.html">Featured</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="confirmation.html">Confirmation</a></li>
+          <li><a href="dashboard.html">Organizers</a></li>
+          <li><a href="add event.html">Add Event</a></li>
+        </ul>
+      </nav>
+
+      <!-- Placeholder: a real login page would need a backend -->
+      <a class="btn btn-accent header-cta" href="login.html" >Student Login</a>
+    </div>
+  </header>
+
+ 
+
+  <main id="main">
+    <section aria-labelledby="dash-title" class="section" id="dashboard">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow eyebrow-dark">For organizers</p>
+          <h2 id="dash-title">Dashboard preview</h2>
+          
+        </div>
+
+        <div class="dash">
+          <div class="dash-bar">
+            <p><strong>Organizer Console</strong> &middot; Student Activities Office</p>
+            <span class="seat-chip ok">Record Data</span>
+          </div>
+
+          <ul aria-label="Summary statistics" class="stat-grid">
+            <li>
+              <span aria-hidden="true" class="stat-icon">🎟</span>
+              <strong>6</strong>
+              <span>Active events</span>
+            </li>
+            <li>
+              <span aria-hidden="true" class="stat-icon">👥</span>
+              <strong id="total-regs">1,223</strong>
+              <span>Total registrations</span>
+            </li>
+            <li>
+              <span aria-hidden="true" class="stat-icon">💺</span>
+              <strong>577</strong>
+              <span>Seats remaining</span>
+            </li>
+            <li>
+              <span aria-hidden="true" class="stat-icon">⏳</span>
+              <strong>18</strong>
+              <span>On waitlists</span>
+            </li>
+          </ul>
+
+          <h3 class="table-title" id="events-table-title">Events &amp; capacity</h3>
+          <div aria-labelledby="events-table-title" class="table-wrap" role="region" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Event</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Registered</th>
+                  <th scope="col">Capacity</th>
+                  <th scope="col">Fill level</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody id="reg-body">
+                <tr>
+                  <th scope="row">Intro to Machine Learning</th>
+                  <td>Nov 7</td>
+                  <td>46</td>
+                  <td>60</td>
+                  <td>
+                    <div aria-label="77 percent full" class="meter meter-sm fill-77 is-low" role="img"><span></span></div>
+                  </td>
+                  <td><span class="seat-chip low">Filling fast</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Careers in Sustainable Energy</th>
+                  <td>Nov 12</td>
+                  <td>120</td>
+                  <td>300</td>
+                  <td>
+                    <div aria-label="40 percent full" class="meter meter-sm fill-40" role="img"><span></span></div>
+                  </td>
+                  <td><span class="seat-chip ok">Open</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">CodeSprint Hackathon</th>
+                  <td>Nov 14&ndash;15</td>
+                  <td>114</td>
+                  <td>120</td>
+                  <td>
+                    <div aria-label="95 percent full" class="meter meter-sm fill-95 is-low" role="img"><span></span></div>
+                  </td>
+                  <td><span class="seat-chip low">Almost full</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Inter-College Debate</th>
+                  <td>Nov 19</td>
+                  <td>45</td>
+                  <td>80</td>
+                  <td>
+                    <div aria-label="56 percent full" class="meter meter-sm fill-56" role="img"><span></span></div>
+                  </td>
+                  <td><span class="seat-chip ok">Open</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Tarang 2026 College Fest</th>
+                  <td>Nov 20&ndash;22</td>
+                  <td>858</td>
+                  <td>1,200</td>
+                  <td>
+                    <div aria-label="72 percent full" class="meter meter-sm fill-72" role="img"><span></span></div>
+                  </td>
+                  <td><span class="seat-chip ok">Open</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Photography Masterclass</th>
+                  <td>Nov 21</td>
+                  <td>40</td>
+                  <td>40</td>
+                  <td>
+                    <div aria-label="100 percent full" class="meter meter-sm fill-100 is-full" role="img"><span></span></div>
+                  </td>
+                  <td><span class="seat-chip full">Full</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 class="table-title" id="people-table-title">Recent registrations</h3>
+          <div aria-labelledby="people-table-title" class="table-wrap" role="region" tabindex="0">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Participant</th>
+                  <th scope="col">Student ID</th>
+                  <th scope="col">Event</th>
+                  <th scope="col">Registered on</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Harshit Verma</th>
+                  <td>24CS1087</td>
+                  <td>CodeSprint Hackathon</td>
+                  <td>Oct 26</td>
+                  <td><span class="seat-chip ok">Confirmed</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Prerna Singh</th>
+                  <td>23EC0452</td>
+                  <td>Intro to Machine Learning</td>
+                  <td>Oct 25</td>
+                  <td><span class="seat-chip ok">Confirmed</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Saniya Ansari</th>
+                  <td>25BA0219</td>
+                  <td>Inter-College Debate</td>
+                  <td>Oct 25</td>
+                  <td><span class="seat-chip pending">Pending review</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Dhairya Gupta</th>
+                  <td>22ME0733</td>
+                  <td>Photography Masterclass</td>
+                  <td>Oct 24</td>
+                  <td><span class="seat-chip full">Waitlisted</span></td>
+                </tr>
+                <tr>
+                  <th scope="row">Madhavi Mam</th>
+                  <td>24AH0108</td>
+                  <td>Tarang 2026 College Fest</td>
+                  <td>Oct 24</td>
+                  <td><span class="seat-chip ok">Confirmed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a aria-label="CampusConnect home" class="brand brand-light" href="index.html">
+          <span aria-hidden="true" class="brand-mark">C</span>
+          <span class="brand-text">Campus<strong>Connect</strong></span>
+        </a>
+        <p class="footer-about">The one place to discover, register for and manage campus events.</p>
+      </div>
+
+      <nav aria-labelledby="footer-links-title">
+        <h2 id="footer-links-title">Useful links</h2>
+        <ul>
+          <li><a href="events.html">Upcoming events</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="confirmation.html">Sample confirmation slip</a></li>
+          <li><a href="dashboard.html">Organizer dashboard</a></li>
+        </ul>
+      </nav>
+
+
+      <section aria-labelledby="footer-contact-title">
+        <h2 id="footer-contact-title">Contact</h2>
+        <address>
+          Student Activities Office<br />
+          Room 204, Student Union Building<br />
+          Horizon State University Campus<br />
+          <a href="mailto:events@campusconnect.example.edu">events@campusconnect.example.edu</a><br />
+          Phone: +91 00000 00000<br />
+          Mon&ndash;Fri, 9:00 AM &ndash; 5:00 PM
+        </address>
+      </section>
+    </div>
+      
+      <div class="container footer-bottom" style="text-align: center; padding: 20px 0; font-family: sans-serif;">
+        <p style="margin-bottom: 10px; color: #666;">Project by:</p>
+        <div style="display: flex; justify-content: center; gap: 15px; font-weight: bold;">
+          <a href="#" style="color: #007bff; text-decoration: none;">Harshit Verma</a>
+          <span style="color: #ccc;">|</span>
+          <a href="#" style="color: #007bff; text-decoration: none;">Prerna Singh</a>
+          <span style="color: #ccc;">|</span>
+          <a href="#" style="color: #007bff; text-decoration: none;">Saniya Ansari</a>
+      </div>
+    
+
+   
+  </footer>
+</body>
+
+</html>
